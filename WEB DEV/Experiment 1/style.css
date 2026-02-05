@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+.logo>svg {
+    background-color: aqua;
+    border-radius: 3px;
+    width: 1.5em;
+    height: 1.5em;
+    color: blue;
+
+    /* display: none; */
+}
+
+nav {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    background-color: aquamarine;
+    font-size: 1.75rem;
+
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    /* justify-content: space-around; */
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+a {
+    display: inline-block;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: red;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    /* font-size: 1.2em; */
+    /* width: 50vw; */
+}
+
+#login {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.userlogin,
+.button {
+    grid-column: 1/-1;
+    justify-self: center;
+    /* width: 100%; */
+}
+
+.userlogin {
+    /* font-family: "Playwrite NZ Basic", cursive; */
+  /* font-optical-sizing: auto; */
+  font-weight: 400;
+  /* font-style: normal; */
+  font-size: 2rem;
+  color: red;
+}
+input::placeholder{
+    font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input{
+    height: 1.8rem;
+    width: 15rem;
+
+}
+.button{
+    width: 50%;
+}
+#b{
+    margin: 10px 0px 0px 10px;
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: aquamarine;
+    color: blue;
+    transition:transform 0.25s ease, color 0.25s ease ;
+}
+
+#b:hover{
+    transform: scale(1.1);
+    color: darkgreen;
+}
