@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .logo {
     display: flex;
@@ -53,79 +56,161 @@ nav>ul {
 nav>ul>li>a {
     text-decoration: none;
 }
+
 a {
     display: inline-block;
-  transition: transform 0.25s ease, color 0.25s ease;
+    transition: transform 0.25s ease, color 0.25s ease;
 }
 
 a:hover {
-  transform: scale(1.1);
-  color: red;
+    transform: scale(1.1);
+    color: red;
 }
+
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
     font-family: "Playwrite NZ Basic", cursive;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    /* font-size: 1.2em; */
-    /* width: 50vw; */
 }
 
-#login {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 3fr repeat(3, 1fr);
+.container {
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.oneliner {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: skyblue;
+    /* font-family: "Edu NSW ACT Cursive", cursive;  */
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.searchbox {
+    margin: 2rem;
+    /* height: 2rem; */
+}
+
+.searchbox>input {
+    /* height: 2.5rem; */
+    width: 35vw;
+    height: 3rem;
+    padding: 0 1.5rem;
+    /* padding-top: 0rem ; */
+    border-radius: 24px;
+    outline-color: #2EC4B6;
+    border: 3px solid #7FE3D1;
+    font-size: 1.1rem;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+
+}
+
+.searchbox>input::placeholder {
+    line-height: 1.5;
+    font-family: "Playwrite NZ Basic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #64748b;
+    font-size: 1rem;
+    /* padding-bottom: 2rem; */
+    text-align: left;
+}
+
+.Books-container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 21vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0 4px 24px 3px rgba(7, 24, 101, 0.08);
+    padding: 1.5rem 0;
+    /* padding-left: 1rem; */
+    border-radius: 12px;
     gap: 1rem;
-    align-items: center;
 }
 
-.userlogin,
-.button {
-    grid-column: 1/-1;
-    justify-self: center;
-    /* width: 100%; */
-}
-
-.userlogin {
-    /* font-family: "Playwrite NZ Basic", cursive; */
-  /* font-optical-sizing: auto; */
-  font-weight: 400;
-  /* font-style: normal; */
-  font-size: 2rem;
-  color: red;
-}
-input::placeholder{
-    font-family: "Edu NSW ACT Cursive", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-input{
-    height: 1.8rem;
-    width: 15rem;
+.book>div:first-child {
+    margin: auto;
 
 }
-.button{
-    width: 50%;
+
+.book img {
+    width: 8rem;
 }
-#b{
-    margin: 10px 0px 0px 10px;
-    padding: 10px 0px;
-    width: 100%;
-    border-radius: 5px;
+
+.bookname {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.price {
+    margin-left: 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 1.1rem;
+}
+
+.Buy {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    border: 2px solid #CBD5E1;
+    color: #64748B;
+    background-color: #F1F5F9;
+    border-radius: 12px ;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    transition: transform 0.25s ease, color 0.25s ease;
     cursor: pointer;
-    border: none;
+}
+.Buy:hover{
+    transform: scale(1.04);
+}
+.cart {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    border: 2px solid aquamarine;
+    border-radius: 12px ;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
     background-color: aquamarine;
-    color: blue;
-    transition:transform 0.25s ease, color 0.25s ease ;
+    color: green;
+    transition: transform 0.25s ease, color 0.25s ease;
+    cursor: pointer;
+}
+.cart:hover{
+    transform: scale(1.04);
 }
 
-#b:hover{
-    transform: scale(1.1);
-    color: darkgreen;
+.book > div:last-child{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    width: 100%;
 }
