@@ -143,6 +143,10 @@
             display: flex;
             gap: 3rem;
             flex-wrap: wrap;
+            margin: auto;
+            width: 70vw;
+            align-content: center;
+            justify-content: center;
         }
 
         .book {
@@ -156,6 +160,11 @@
             /* padding-left: 1rem; */
             border-radius: 12px;
             gap: 1rem;
+            transition: transform 0.25s ease;
+        }
+
+        .book:hover {
+            transform: scale(1.1);
         }
 
         .book>div:first-child {
