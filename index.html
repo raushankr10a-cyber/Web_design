@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024">
-    <title>Web Design</title>
+    <title>Web Design Practical | Raushan Kumar</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,12 +33,28 @@
             text-transform: uppercase;
         }
 
-        /* Elegant visual divider to replace the subtitle */
+        /* Elegant visual divider */
         .divider {
             width: 60px;
             height: 2px;
-            background-color: #9fb29b; /* Sage green from your nav bar */
-            margin: 0 auto 50px auto;
+            background-color: #bd6a4f; /* Terracotta line */
+            margin: 0 auto 25px auto;
+        }
+
+        /* Your Name & Roll Number Styling */
+        .student-info {
+            font-size: 1.5rem;
+            color: #9fb29b; /* Sage green */
+            font-style: italic;
+            margin-bottom: 45px;
+            line-height: 1.5;
+        }
+
+        /* Making your actual name and number pop in a darker color */
+        .student-info span {
+            font-weight: 600;
+            color: #36312d;
+            font-style: normal;
         }
 
         /* Layout for the buttons */
@@ -49,7 +65,7 @@
             align-items: center;
         }
 
-        /* Button styling matching the checkout button */
+        /* Button styling */
         .experiment-links a {
             background-color: #bd6a4f;
             color: #ffffff;
@@ -78,9 +94,13 @@
         <h1>Web Design</h1>
         <div class="divider"></div>
 
+        <div class="student-info">
+            Submitted by: <span>Raushan Kumar</span><br>
+            Roll No: <span>125113012</span>
+        </div>
+
         <div class="experiment-links">
             <a href="Experiment-1/index.html">Experiment 1: Bookstore Home</a>
-            
             <a href="Experiment-2/Cart.html">Experiment 2: Shopping Cart</a>
         </div>
     </div>
